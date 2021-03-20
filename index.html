@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+
+<html>
+<!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+
+<body class="text-center bg-dark   text-info pt-5">
+    <h1>Speech Recognition in JavaScript</h1>
+        <div class="container-lg my-4 text-info bg-white">
+           <form>
+            <div class="mb-3">
+                <label for="textlabel" class="form-label">
+                    
+                
+                
+                <p id="textarea" class="text-center  mt-4"></p>
+            </label>
+              </div>
+            </form>
+     
+            </div>
+    <button id="speak" class="btn btn-success mt-4">Speak</button>  
+</body>
+
+<!-- <script>
+    let speak = document.getElementById('speak');
+    let textarea = document.getElementById('textarea');
+    let SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+    let recognition = new SpeechRecognition();
+    speak.addEventListener('click', function () {
+        recognition.start();
+        textarea.innerHTML = '...speaking';
+    })
+    recognition.onresult = function (e) {
+        let transcript = e.results[0][0].transcript;
+        textarea.innerHTML = transcript;
+    }
+
+</script> -->
+<script src="index.js"></script>
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+</html> 
