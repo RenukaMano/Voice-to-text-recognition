@@ -6,6 +6,7 @@ let speak = document.getElementById('speak');
         recognition.start();
         textarea.innerHTML = '...speaking';
     })
+    
     recognition.onresult = function (e) {
         let transcript = e.results[0][0].transcript;
         textarea.innerHTML = transcript;
